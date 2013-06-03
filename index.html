@@ -4,9 +4,11 @@
 	<title> NTNU - Det skapende universitet </title>
 	
 	
-<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-<link href="css/iconic-stroke/iconic_stroke.css" rel="stylesheet" type="text/css" media="screen">
-<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link href="css/iconic-stroke/iconic_stroke.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="utf-8">
 
 
 </head>
@@ -14,36 +16,40 @@
 <body>
 
 
-	<div class="row">
-		<div class="span5">
+	<div class="row-fluid">
+		<div class="span6">
 			<img src="img/forelesning-icon.png" width="16" heigth="16">
 			Finn rom
 		</div>
 
-
-		</div>
-
-		<div class="span2">
+		<div class="span3">
 			<div class="iconic curved_arrow"></div>
-			Snarveier
+			Snarveier</br>
+			<button class="btn btn-block" type="button">Innsida</button>
+			<button class="btn btn-block" type="button">Studweb</button>
+			<button class="btn btn-block" type="button">Webmail</button>
+			<button class="btn btn-block" type="button">Bibliotek</button>
 		</div>
 
-		<div class="span2">
+		<div class="span3">
 			<div class="iconic book_alt2"></div>
 			Finn emne
-
+			<form>
+				<input type="text" placeholder="Søk på rom">
+				<button type="submit" class="btn">Søk</button>
+			</form>
 		</div>
 
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 
-		<div class ="span4">
+		<div class ="span6">
 			<div class="iconic calendar_alt_stroke"></div>
 			Timeplan
 		</div>
 
-		<div class="span5">
+		<div class="span6">
 			<div class="iconic article"></div>
 			Nyheter til studenter
 		</div>
