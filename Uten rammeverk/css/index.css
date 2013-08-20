@@ -1,0 +1,58 @@
+
+#contentWrapper{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+#finnRom{
+	float: left;
+	width: 48%;
+	height: 98%;
+}
+
+#topRightWrapper{
+	float: right;
+	width:48.8%;
+	margin:0px;
+	border: 0px;
+	padding: 0px;
+	height: 98%;
+}
+
+#snarveier{
+	width: 48%;
+	float: left;
+	height: 48%;
+
+
+}
+
+#finnEmne{
+	width: 48%;
+	float: left;
+	height: 48%;
+}
+#timeplan{
+	width: 48%;
+	float: left;
+}
+
+#rss{
+	float: right;
+	width: 48%;
+}
+#nyheter{
+	width: 100%;
+	float: left;
+}
+
+.box{
+	border-radius: 5px;
+	margin: 5px;
+	background-color: #cecece;
+}
+
+.lineWrapper{
+	height: 40%;
+}
