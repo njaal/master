@@ -2,19 +2,22 @@
 <head>
 
 	<link href="css/index.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="ikoner/font-awesome/css/font-awesome.min.css">
+	<link href="ikoner/iconic-stroke/iconic_stroke.css" rel="stylesheet" type="text/css" media="screen">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+
 
 </head>
 
 <body>
 
 	<div id="contentWrapper">
-		<div class="lineWrapper">
+		<div class="lineWrapper" id="line1">
 
-			<div id="finnRom" class="box">
+			<div id="finnRom" class="box-container">
+				<i class="icon-map-marker"> Finn rom</i>
 
-				<h2>Finn rom</h2>
 				<input></input><button>Søk</button>
 			</br>
 			<img src="img/kart.png">
@@ -22,19 +25,22 @@
 
 		<div id="topRightWrapper">
 
-			<div id="finnEmne" class="box">
-				<h2>Finn emne</h2>
+			<div id="finnEmne" class="box-container">
+				<i class="icon-book"> Finn emne</i>
+
 				<input></input><button>Søk</button>
 
 			</div>
 
-			<div id="snarveier" class="box">
-				<h2>Snarveier</h2>
-				<button> Webmail </button>
-				<button> Studweb </button>
-				<button> Bibliotek </button>
-				<button> Innsida </button>
+			<div id="snarveier" class="box-container">
+				<i class="icon-external-link"> Snarveier</i>
+				<div id="snarveierButtons">
+					<button> Webmail </button>
+					<button> Studweb </button>
 
+					<button> Bibliotek </button>
+					<button> Innsida </button>
+				</div>
 			</div>
 
 			
@@ -42,25 +48,67 @@
 		</div>
 	</div>
 
-	<div class="lineWrapper">
-		<div id="timeplan" class="box">
-			<h2>Timeplan</h2>
+	<div class="lineWrapper" id="line2">
+		<div id="timeplan" class="box-container">
+			<i class="icon-calendar"> Timeplan</i>
 			<img src="img/timeplan.png" style="width: 100%"></img>
 		</div>
 
-		<div id="rss" class="box">
-			<h2>Rss</h2>
+		<div id="rss" class="box-container">
+			<i class="icon-rss"> RSS</i>
+			<table>
+				<tr>
+					<td><i class="icon-envelope"></i>
+					</td>
+					<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
+				</tr>
+				<tr>
+					<td><i class="icon-envelope"></i></td>
+					<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
+				</tr>
+				<tr>
+					<td><i class="icon-envelope"></i></td>
+					<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
+				</tr>
+				<tr>
+					<td><i class="icon-envelope"></i></td>
+					<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
+				</tr>
+			</table>
 		</div>
 
 	</div>
+	<div class="lineWrapper" id="line3">
 
-	<div id="nyheter" class="box">
-		<h2>Nyheter</h2>
+		<div id="nyheter" class="box-container">
+			<i class="icon-columns"> Nyheter</i>
+
+			<table>
+				<tr>
+					<td><img src="img/nyheter/fremragende-undervisning.png"></i>
+					</td>
+					<td>NTNU er i finalerunden om å få sentre for fremragende undervisning</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/nyheter/immatrikulering.png">
+					</td>
+					<td> Se video-opptak fra immatrikuleringen tirsdag 13. August</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/ntnu-logo-small.png">
+					</td>
+					<td>
+						7000 studenter inntar NTNU
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 
 
 </div>
-<script src="js/jquery-2.0.3.min.js"></script>
 
 
 </body>
