@@ -3,113 +3,218 @@
 
 	<link href="css/index.css" rel="stylesheet">
 	<link rel="stylesheet" href="ikoner/font-awesome/css/font-awesome.min.css">
-	<link href="ikoner/iconic-stroke/iconic_stroke.css" rel="stylesheet" type="text/css" media="screen">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
+	<script src="js/jquery-1.10.2.min.js"></script>
 
+	<title> ntnu.no </title>
 
 </head>
 
-<body>
+<body onload="bodyLoad()">
+	<div id="header">
+		<center><img src="img/NTNUlogo.png"></center>
 
-	<div id="contentWrapper">
-		<div class="lineWrapper" id="line1">
+	</div>
 
-			<div id="finnRom" class="box-container">
-				<i class="icon-map-marker"> Finn rom</i>
+	<div class="lineWrapper" id="line1">
 
-				<input></input><button>Søk</button>
-			</br>
-			<img src="img/kart.png">
+		<div id="finnRom" class="box-container">
+			<i class="icon-map-marker section-title"> Finn rom</i>
+
+			<span><input></input><button><i class="icon-search search-button"> Søk</i></button></span>
+		</br>
+		<img src="img/kart.png">
+	</div>
+
+	<div id="topRightWrapper">
+
+		<div id="finnEmne" class="box-container">
+			<i class="icon-beaker section-title"> Finn emne</i>
+
+			<span><input></input><button><i class="icon-search search-button"> Søk</i></button></span>
+
 		</div>
 
-		<div id="topRightWrapper">
+		<div id="snarveier" class="box-container">
+			<i class="icon-external-link section-title"> Snarveier</i>
+			<div class="snarveierButtons">
+				<button> <i class="icon-envelope"></i>  Webmail </button>
+				<button> <i class="icon-globe"></i> Studweb </button>
 
-			<div id="finnEmne" class="box-container">
-				<i class="icon-book"> Finn emne</i>
+				<button> 			<i class="icon-book"></i>
+					Bibliotek </button>
+					<button> 			<i class="icon-home"></i>
+						Innsida </button>
+					</div>
+				</div>
 
-				<input></input><button>Søk</button>
 
 			</div>
+		</div>
 
-			<div id="snarveier" class="box-container">
-				<i class="icon-external-link"> Snarveier</i>
-				<div id="snarveierButtons">
-					<button> Webmail </button>
-					<button> Studweb </button>
+		<div class="lineWrapper" id="line2">
+			<div id="timeplan" class="box-container">
+				<i class="icon-calendar section-title"> Timeplan</i>
+				<img src="img/timeplan.png" style="width: 100%"></img>
+			</div>
 
-					<button> Bibliotek </button>
-					<button> Innsida </button>
+			<div id="rss-large-screen" class="box-container rss">
+				<i class="icon-rss"> RSS</i>
+				<table>
+					<tr>
+						<td><i class="icon-circle"></i>
+						</td>
+						<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
+					</tr>
+					<tr>
+						<td><i class="icon-circle"></i></td>
+						<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
+					</tr>
+					<tr>
+						<td><i class="icon-circle"></i></td>
+						<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
+					</tr>
+					<tr>
+						<td><i class="icon-circle"></i></td>
+						<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+		<div class="lineWrapper" id="line3">
+
+			<div id="nyheter" class="box-container">
+				<i class="icon-columns section-title"> Nyheter</i>
+
+				<table>
+					<tr>
+						<td><img src="img/nyheter/fremragende-undervisning.png"></i>
+						</td>
+						<td>NTNU er i finalerunden om å få sentre for fremragende undervisning</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/nyheter/immatrikulering.png">
+						</td>
+						<td> Se video-opptak fra immatrikuleringen tirsdag 13. August</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/ntnu-logo-small.png">
+						</td>
+						<td>
+							7000 studenter inntar NTNU
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="informasjon" class="box-container">
+				<i class="icon-info section-title"> Informasjon</i>
+
+				<div class="informasjonButtons">
+					<button> <i class="icon-calendar"></i>
+						Timeplan </button>
+						<button> <i class="icon-comments"></i> Klage på karakter </button>
+						<button> <i class="icon-info"></i> EksamenInfo </button>
+						<button>  <i class="icon-group"></i>Søk etter studenter </button>
+						<button> <i class="icon-group"></i> Søk etter ansatte </button>
+						<button> <i class="icon-laptop"></i> IT-hjelp </button>
+
+					</div>
+
 				</div>
 			</div>
 
-			
+			<div id="rss-small-screen" class="box-container rss">
 
-		</div>
-	</div>
-
-	<div class="lineWrapper" id="line2">
-		<div id="timeplan" class="box-container">
-			<i class="icon-calendar"> Timeplan</i>
-			<img src="img/timeplan.png" style="width: 100%"></img>
-		</div>
-
-		<div id="rss" class="box-container">
-			<i class="icon-rss"> RSS</i>
-			<table>
-				<tr>
-					<td><i class="icon-envelope"></i>
-					</td>
-					<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
-				</tr>
-				<tr>
-					<td><i class="icon-envelope"></i></td>
-					<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
-				</tr>
-				<tr>
-					<td><i class="icon-envelope"></i></td>
-					<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
-				</tr>
-				<tr>
-					<td><i class="icon-envelope"></i></td>
-					<td>Informasjonsmelding fra RSS feed her. Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her.Informasjonsmelding fra RSS feed her. </td>
-				</tr>
-			</table>
-		</div>
-
-	</div>
-	<div class="lineWrapper" id="line3">
-
-		<div id="nyheter" class="box-container">
-			<i class="icon-columns"> Nyheter</i>
-
-			<table>
-				<tr>
-					<td><img src="img/nyheter/fremragende-undervisning.png"></i>
-					</td>
-					<td>NTNU er i finalerunden om å få sentre for fremragende undervisning</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="img/nyheter/immatrikulering.png">
-					</td>
-					<td> Se video-opptak fra immatrikuleringen tirsdag 13. August</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="img/ntnu-logo-small.png">
-					</td>
-					<td>
-						7000 studenter inntar NTNU
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+			</div>
 
 
-</div>
+			<div id="kontakt" class="box-container">
+				<i class="icon-phone section-title"> Kontakt</i>
+
+				<div class="section-seperator">
+					<p>		
+						<b> Spørsmål om studier </b></br>
+						<a href="mailto:studentservice@adm.ntnu.no">
+							studentservice@adm.ntnu.no
+						</a>
+					</p>
+
+					<p>
+						Samfunnsfag og humanistiske fag
+						Tlf Dragvoll: <span>73 59 67 00</span>
+					</p>
+
+					<p>
+						Realfag, ingeniørfag, medisin
+						Tlf: Gløshaugen: <span>73 59 52 00</span>
+					</p>
+				</div>
+				<div class="section-seperator">
+					<p>
+						<b> Spørsmål om IT</b></br>
+						Epost, brukernavn/passord, programvare:</br>
+						<a href="mailto:orakel@ntnu.no">
+							orakel@ntnu.no
+						</a>
+					</p>
+				</div>
+				<p>
+					<b> Web </b>
+					<a href="mailto:web@info.ntnu.no">
+						web@info.ntnu.no
+					</a>
+				</p>
+
+			</div>
+
+			<script>
+
+			$(window).resize(function(){
+				console.log('document: '+$(document).width());
+				console.log('window: '+$(window).width());
+				console.log('body: '+$('body').width());
+
+				resizeDiv();
+			});
+
+			function bodyLoad(){
+				$('#rss-small-screen').html($('#rss-large-screen').html());
+
+				resizeDiv();
+			}
+
+			function resizeDiv(){
+				if($(window).width()>1050)
+				{	
+					$('#rss-large-screen').height($('#timeplan').height());
+					$('#informasjon').height($('#nyheter').height());
+				}
+
+				if($(window).width()<1050 && $(window).width()>691){
+					$('#informasjon').height($('#nyheter').height());
 
 
-</body>
-</html>
+				}
+				if($(window).width()<946){
+					console.log("UNDER 946");					
+					$('#rss-small-screen').css("display", "inline");
+					$('#rss-large-screen').css("display", "none");
+
+				}
+				if($(window).width()>945 ){
+					$('#rss-large-screen').css("display", "inline");
+					$('#rss-small-screen').css("display", "none");
+
+				}
+
+			}
+			</script>
+
+
+		</body>
+		</html>
