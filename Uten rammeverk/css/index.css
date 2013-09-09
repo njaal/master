@@ -200,12 +200,12 @@ i{
 /*
 Media Queries her og nedover!
 */
-@media screen and (min-width: 1051) and (max-width: 1400px) { 
+@media screen and (min-width: 1051px) and (max-width: 1400px) { 
 	
 
 }
 
-@media screen and (min-width: 768) and (max-width: 1050px) { 
+@media screen and (min-width: 768px) and (max-width: 1050px) { 
 	body {
 		font-size: 80%;
 	}
@@ -230,7 +230,7 @@ Media Queries her og nedover!
 /*
 Liten TABLET
 */
-@media screen and (min-width: 481) and (max-width: 767px) { 
+@media screen and (min-width: 481px) and (max-width: 767px) { 
 	#schedule{
 		display: none;
 	}
@@ -275,7 +275,7 @@ Liten TABLET
 /*
 TELEFON
 */
-@media screen and (max-width: 480){
+@media screen and (max-width: 480px){
 	body {
 		font-size: 40%;
 		margin-left: 0px;
@@ -349,6 +349,6 @@ TELEFON
 /*
 Små telefoner
 */
-@media screen and(max-width: 240){
+@media screen and(max-width: 240px){
 
 }
