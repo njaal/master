@@ -3,86 +3,156 @@
 <head>
 	<title> NTNU - Det skapende universitet </title>
 	
-	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link href="css/iconic-stroke/iconic_stroke.css" rel="stylesheet" type="text/css" media="screen">
-	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link href="css/index.css" rel="stylesheet">
 
-	<meta charset="utf-8">
-
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 
 </head>
 
 <body>
-	<center><img src="img/ntnu.jpg"></center>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">			
+				<div class="visible-xs">
+					<button type="button" class="btn btn-default btn-lg">
+						<span class="glyphicon glyphicon-align-justify"></span>
+					</button>
+				</div>	
+			</div>
+			<div class="col-lg-10 col-md-10 col-md-offset-4 col-sm-10 col-xs-10">
+				<img src="img/ntnu.jpg" class=" img-responsive bannerimg">
+			</div>
+		</div>
+		<ul class="nav nav-pills navigation hidden-xs">
+			<li class="active"><a href="#">Hjem</a></li>
+			<li><a href="#">Informasjon</a></li>
+			<li><a href="#">Om Ntnu</a></li>
+		</ul>
+		
+		<div class="row" >
+			<div class="col-lg-6 col-md-7 col-sm-7 col-xs-12 well rom " id="rom">
+				<h3><span class="glyphicon glyphicon-road"></span>
+					Finn rom</h3>
+					<form class="form-inline" role="form">
+						<input class="form-control" placeholder="Søk på rom">
+						<button type="submit" class="btn btn-info">Søk</button>
+					</form>
+				</br>
+				<img src="img/kart.png" class="img-responsive hidden-xs">
+			</div>
+			<div class="col-lg-6 col-md-5 col-sm-5 col-xs-12 emneinfo" id="emneinfo">
+				<div class=" well emne">
+					<h3><span class="glyphicon glyphicon-book"></span> Finn emne</h3>
+					<form class="form-inline" role="form">
+						<input class="form-control" placeholder="Søk på navn eller fagkode">
+						<button type="submit" class="btn btn-info">Søk</button>
+					</form>
+					
+				</div>
 
-	<div class="row">
-		<div class="span6">
-			<box>
-			<h4><img src="img/forelesning-icon.png" width="16" heigth="16">
-				Finn rom</h4>
-				<form>
-					<input type="text" placeholder="Søk på rom">
-					<button type="submit" class="btn">Søk</button>
-				</form>
-</box>
+				<div class="well">
+					<h3><span class="glyphicon glyphicon-hand-right"></span>Snarveier</h3>
+					<div id="snarveier">
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-6"><i class="icon-white icon-home"></i> Innsida</button>
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-6"><i class="icon-white icon-user"></i> Studweb</button>
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-6"><i class="icon-white icon-envelope"></i> Webmail</button>
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-12"><i class="icon-white icon-book"></i> Bibliotek</button>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 well timeplan hidden-xs ">
+
+				<h3><span class="glyphicon glyphicon-calendar"></span>Timeplan</h3>
+				<img src="img/timeplan.png" class="img-responsive">
 			</div>
 
-			<div class="span3">
-				<box>
-				<h4><div class="iconic curved_arrow"></div>
-					
-					Snarveier</h4>
-					<button class="btn btn-block" type="button">Innsida</button>
-					<button class="btn btn-block" type="button">Studweb</button>
-					<button class="btn btn-block" type="button">Webmail</button>
-					<button class="btn btn-block" type="button">Bibliotek</button>
-				</box>
-				</div>
-
-				<div class="span3">
-					<h4><div class="iconic book_alt2"></div>
-						Finn emne</h4>
-						<form>
-							<input type="text" placeholder="Søk på navn eller fagkode">
-							<button type="submit" class="btn">Søk</button>
-						</form>
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 nyheter">
+				<div class="well"><h3>Nyheter for studenter</h3>
+					<div>
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
 					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="row infokont">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 infokont">
+				<div class="well">
+					<h3><span class="glyphicon glyphicon-bullhorn"></span> Informasjon</h3>
+					<div id="informasjon">
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-6"><i class="icon-white icon-home"></i> Timeplan</button>
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-6"><i class="icon-white icon-user"></i> Klage på karakter</button>
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-6"><i class="icon-white icon-envelope"></i> Eksamensinfo</button>
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-12"><i class="icon-white icon-book"></i> Søk etter studenter</button>
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-12"><i class="icon-white icon-book"></i> Søk etter ansatte</button>
+						<button class="buttons btn btn-info btn-large col-lg-6 col-md-4 col-sm-4 col-xs-12"><i class="icon-white icon-book"></i> IT-hjelp</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="well kontakt">
+				<h3><span class="glyphicon glyphicon-comment"></span> Kontakt</h3>
+
+				<div id="kontakt" class="box-container">
+					<i class="icon-phone section-title"> Kontakt</i>
+
+					<div class="section-seperator">
+						<p>		
+							<b> Spørsmål om studier </b><br>
+							<a href="mailto:studentservice@adm.ntnu.no">
+								studentservice@adm.ntnu.no
+							</a>
+						</p>
+
+						<p>
+							Samfunnsfag og humanistiske fag
+							Tlf Dragvoll: <span>73 59 67 00</span>
+						</p>
+
+						<p>
+							Realfag, ingeniørfag, medisin
+							Tlf: Gløshaugen: <span>73 59 52 00</span>
+						</p>
+					</div>
+					<div class="section-seperator">
+						<p>
+							<b> Spørsmål om IT</b><br>
+							Epost, brukernavn/passord, programvare:<br>
+							<a href="mailto:orakel@ntnu.no">
+								orakel@ntnu.no
+							</a>
+						</p>
+					</div>
+					<p>
+						<b> Web </b>
+						<a href="mailto:web@info.ntnu.no">
+							web@info.ntnu.no
+						</a>
+					</p>
 
 				</div>
-
-				<div class="row">
-
-					<div class ="span6">
-						<h4><div class="iconic calendar_alt_stroke"></div>
-							Timeplan</h4>
-							<img src="img/timeplan.png">
-						</div>
-
-						<div class="span6">
-							<h4><div class="iconic article"></div>
-								Nyheter til studenter</h4>
-								<div style=" height: 180px; overflow-y: scroll;">
-									test<br />
-									test<br />
-									test<br />
-									test<br />
-									test<br />
-									test<br />
-									test<br />
-									test<br />
-									test<br />
-									test<br />
-								</div>
-							</div>
-
-						</div>
-
-
-
-						<script src="js/bootstrap.min.js"></script>
-
-					</body>
-
-					</html>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/rammeverk.js"></script>
+</body>
+</html>

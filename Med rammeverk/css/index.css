@@ -12,8 +12,179 @@
 	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-box{
-	background-color: gray;
-	float: left;
-	border-radius:25px;
+
+.container{
+	max-width: 90%;
 }
+
+.bannerimg{
+	max-height: 120px;
+}
+
+.navigation{
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid gray;
+}
+.banner{
+	padding-top: 15px;
+}
+.bannerrow{
+	border-bottom: 1px solid gray;
+
+	display: inline-block;
+}
+
+.btn-info{
+	padding: 5px;
+}
+
+h3{
+	margin-top: 5px;
+
+	border-bottom: 1px solid gray;
+}
+.well{
+	margin-bottom: 15px;
+}
+#informasjon .buttons, #snarveier .buttons{
+	margin:5px;
+	width:45%;
+}
+.infokont{
+	padding: 0px;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+.well{
+	overflow: hidden;
+
+}
+
+.form-control{
+	width: 70%;
+	display: inline;
+}
+
+.meny{
+	float:left;
+	width: 15%;
+}
+
+@media (max-width: 992px) {
+	.emneinfo{
+		padding: 0px;
+		padding-left: 15px;
+	}
+	.infokont{
+		padding: 0px;
+		padding-right: 15px;
+		padding-left: 0px;
+	}
+	.nyheter{
+		padding: 0px;
+	}
+}
+
+@media (max-width: 768px) {
+	.emneinfo{
+		padding: 0px;
+
+	}
+	
+	.infokont{
+		
+		padding-left: 0px;
+	}
+	.informasjon{
+		padding: 0px;
+	}
+	.form-control{
+		width: 80%;
+	}
+	
+	.nyheter{
+		padding: 0px;
+	}		
+
+
+}
+
+/**Mediaqueries below*//*
+@media (max-width: 1271px) {
+  #informasjon .buttons{
+	width: 98%;
+	float:left;
+}
+@media (max-width: 1126px) {
+	.timeplan{
+		width: 100%;
+		float: left;
+	}
+	.nyheter{
+		width: 100%;
+	}
+	.rom{
+		width: 65%;
+		float: left;
+	}
+	.emneinfo{
+		width:35%;
+	}
+	.emne{
+		width: 100%;
+		float: right;
+	}
+
+	.informasjon{
+		float: left;
+		width:100%;
+	}
+	.inputfelt{
+	width: 170px;
+	}
+
+}
+@media (max-width: 896px) {
+	.well{
+		width: 100%;
+	}
+	.emneinfo{
+		width: 100%;
+	}
+	.emne{
+		width: 40%;
+	}
+	.informasjon{
+		width: 55%;
+	}
+	.emneinfo,.nyheter{
+	margin:0px;
+	padding: 0px;
+}
+}
+
+
+@media (max-width: 818px) {
+	.emne{
+		width: 45%;
+	}
+	.informasjon{
+		width: 50%;
+	}
+	
+
+}
+@media (max-width: 625px) {
+	.emne{
+		width: 100%;
+	}
+	.informasjon{
+		width: 100%;
+	}
+	}*/
+
+
+
+
