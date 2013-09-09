@@ -19,7 +19,7 @@ center img{
 }
 
 #findRoom{
-	height: 98%;
+	height: 25%;
 	float: left;
 	width: 48%;
 	display: inline-block;
@@ -28,7 +28,7 @@ center img{
 #topRightWrapper{
 	float: right;
 	width:48.8%;
-	height: 96%;
+	height: 25%;
 }
 
 #shortcuts{
@@ -46,6 +46,7 @@ center img{
 #schedule{
 	width: 48%;
 	float: left;
+	clear: both;
 }
 
 #rss-large-screen{
@@ -80,16 +81,6 @@ center img{
 	border: 1px solid #9D9D9D;
 	overflow: hidden;
 	
-}
-
-.lineWrapper{
-	margin-top: 5px;
-	width: 100%;
-	clear: both;
-}
-#line1{
-	height: 25%;
-	overflow: visible;
 }
 
 img{
@@ -127,7 +118,6 @@ button {
 	display:inline-block;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:15px;
 	font-weight:bold;
 	font-style:normal;
 	text-decoration:none;
@@ -148,7 +138,7 @@ button:active {
 	width: 100%;
 }
 #news td:first-of-type{
-	width: 30%;
+	width: 20%;
 }
 
 .rss-large-screen td:first-of-type{
@@ -162,6 +152,10 @@ button:active {
 	margin-bottom: 10px;
 	margin-right: 5px;
 }
+
+#information button{
+	font-size: 1em;
+}
 span button{
 }
 .search-button{
@@ -170,7 +164,7 @@ span button{
 
 #information button{
 	width: 30%;
-	height:10%;
+	height:30%;
 	font-size: 1em;
 	float: left;
 	margin-bottom: 10px;
@@ -194,7 +188,7 @@ i{
 	width: 90%;
 	padding-left: 5%;
 
-	padding-top: 10px;
+	padding-top: 20px;
 	text-align: center;
 }
 
@@ -207,19 +201,15 @@ i{
 Media Queries her og nedover!
 */
 @media screen and (min-width: 1051) and (max-width: 1400px) { 
-	#line1{
-		height: 25%;
-	}
+	
 
 }
 
 @media screen and (min-width: 768) and (max-width: 1050px) { 
 	body {
-		font-size: 60%;
+		font-size: 80%;
 	}
-	#line1{
-		height: 30%;
-	}
+
 	#schedule{
 		width: 98.8%;
 		overflow: hidden;
@@ -227,12 +217,9 @@ Media Queries her og nedover!
 	#rss-large-screen{
 		width: 98.8%;
 	}
-	#line1{
-		height: 30%;
-	}
+
 
 	#information button{
-		font-size: 1.5em;
 	}
 	#kontakt p{
 		font-size: 1.5em;
@@ -255,17 +242,29 @@ Liten TABLET
 		width: 100%;
 		height: auto;
 	}
+	#findCourse{
+		height: 60px;
+	}
+	#shortcuts{
+		height: auto;
+	}
+
+	#shortcuts button{
+		height: 60px;
+	}
+	.shortcutsButtons{
+		height: auto;
+	}
 	
 	#topRightWrapper{
 		float: left;
-		width: 45%;
+		width: 48.5%;
+		height: auto;
 	}
 	#news{
-		width: 45%;
+		width: 48.5%;
 	}
-	#line3{
-		float: left;
-	}
+
 	#rss-large-screen{
 		display: none;
 	}
