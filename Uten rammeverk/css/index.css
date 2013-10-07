@@ -7,7 +7,6 @@ body{
 }
 
 #mainWrapper{
-	background-color: white;
 }
 
 center img{
@@ -23,30 +22,46 @@ center img{
 
 }
 
+.toprightBoxes{
+	border-radius: 5px;
+	background-color: #E0E0E0;
+	border: 1px solid #9D9D9D;
+}
+
 #findRoom{
 	height: 40%;
 	float: left;
 	width: 48%;
-	border: 1px solid #9D9D9D;
+	margin-bottom: 5px;
 }
 
 #topRightWrapper{
 	float: right;
-	width:48.8%;
+	height: 40%;
+	width:48%;
+	overflow: hidden;
+	margin: 5px;
 	border-radius: 5px;
+	margin-bottom: 5px;
+
+
 }
 
 #shortcuts{
 	height: auto;
 	float: right;
-	height: 76%;
-	width: 98%;
+	height: 80%;
+	width: 100%;
+	margin-bottom: 5px;
+
 }
 
 #findCourse{
 	height: 20%;
-	width: 98%;
+	width: 100%;
 	float: right;
+	margin-bottom: 5px;
+
 }
 #schedule{
 	width: 48%;
@@ -87,7 +102,6 @@ table{
 	border-radius: 5px;
 	margin: 5px;
 	background-color: #E0E0E0;
-	border: 1px solid #9D9D9D;
 	overflow: hidden;
 	
 }
@@ -207,21 +221,21 @@ Media Queries her og nedover!
 */
 @media screen and (min-width: 1200px){ 
 	
-#mainWrapper{
-	width: 80%;
-	margin: 0 auto;
-}
+	#mainWrapper{
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 928){
 
 	#shortcuts button{
-	width: 40%;                
-}
+		width: 40%;                
+	}
 
-.shortcutsButtons{
-	padding-top: 20px;
-}
+	.shortcutsButtons{
+		padding-top: 20px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1050px) { 
@@ -233,21 +247,21 @@ Media Queries her og nedover!
 		width: 98.8%;
 		overflow: hidden;
 	}
-	#topRightWrapper{
+	/*#topRightWrapper{
 		height: 24%;
-	}
-	#rss-large-screen{
-		width: 98.8%;
-	}
+		}*/
+		#rss-large-screen{
+			width: 98.8%;
+		}
 
 
-	#information button{
-	}
-	#kontakt p{
-		font-size: 1.5em;
-	}
+		#information button{
+		}
+		#kontakt p{
+			font-size: 1.5em;
+		}
 
-}
+	}
 
 /*
 Liten TABLET
@@ -280,11 +294,10 @@ Liten TABLET
 	
 	#topRightWrapper{
 		float: left;
-		width: 48.5%;
 		height: auto;
 	}
 	#news{
-		width: 48.5%;
+		float: right;
 	}
 
 	#rss-large-screen{
